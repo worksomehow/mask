@@ -4,6 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>🦖 다이노 포켓몬 코 방패 대작전</title>
+
+
+    <!-- 여기부터 추가 -->
+    <link id="app-icon" rel="apple-touch-icon" sizes="180x180" href="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="코 방패 대작전">
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const canvas = document.createElement('canvas');
+            canvas.width = 180;
+            canvas.height = 180;
+            const ctx = canvas.getContext('2d');
+
+            ctx.fillStyle = '#0ea5e9'; // 배경색만 여기서 변경
+            ctx.fillRect(0, 0, 180, 180);
+
+            ctx.font = '105px sans-serif';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('🛡️', 90, 96); // 아이콘만 여기서 변경
+
+            document.getElementById('app-icon').href = canvas.toDataURL('image/png');
+        });
+    </script>
+    <!-- 여기까지 추가 -->
+
+
+    
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Jua & Noto Sans KR -->
